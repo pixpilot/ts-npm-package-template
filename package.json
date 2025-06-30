@@ -1,0 +1,66 @@
+{
+  "name": "@pixpilot/ts-npm-package-template",
+  "version": "0.0.0-template",
+  "description": "A reusable TypeScript npm package template for scalable library and module (slam) development, featuring modern tooling, best practices, and ready-to-use configuration.",
+  "keywords": [],
+  "license": "MIT",
+  "author": "",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc --project tsconfig.build.json",
+    "clean": "rimraf dist",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "format": "prettier --check .",
+    "format:fix": "prettier --write .",
+    "typecheck": "tsc --noEmit",
+    "tsc:watch": "tsc --noEmit --watch",
+    "fix:all": "pnpm run lint:fix && pnpm run format:fix",
+    "prepare": "husky",
+    "preinstall": "npx only-allow pnpm",
+    "prepublishOnly": "pnpm run clean && pnpm run build",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "release": "semantic-release"
+  },
+  "devDependencies": {
+    "@pixpilot/dev-config": "^1.1.5",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^13.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^11.0.3",
+    "@semantic-release/npm": "^12.0.2",
+    "@semantic-release/release-notes-generator": "^14.0.3",
+    "@types/jest": "^30.0.0",
+    "eslint": "^8.55.0",
+    "husky": "^9.1.7",
+    "jest": "^30.0.3",
+    "prettier": "^3.6.2",
+    "rimraf": "^6.0.1",
+    "semantic-release": "^24.2.5",
+    "ts-jest": "^29.4.0",
+    "typescript": "^5.3.3"
+  },
+  "packageManager": "pnpm@10.12.2",
+  "publishConfig": {
+    "access": "public"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx,yml}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "extends": "@pixpilot/dev-config/typescript",
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "declaration": true,
+    "outDir": "./dist",
+    "rootDir": "."
+  },
+  "include": ["src", "test"],
+  "exclude": ["node_modules", "build", "coverage", "dist"]
+}

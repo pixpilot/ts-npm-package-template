@@ -1,8 +1,0 @@
-name: Dependabot auto approve and merge
-
-on:
-  pull_request:
-
-jobs:
-  dependabot-auto-merge:
-    uses: pixpilot/dev-config/.github/workflows/dependabot-auto-merge.yml@main

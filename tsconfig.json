@@ -4,8 +4,7 @@
     "module": "ESNext",
     "moduleResolution": "bundler",
     "declaration": true,
-    "outDir": "./dist",
-    "rootDir": "."
+    "outDir": "./dist"
   },
   "include": ["src", "test"],
   "exclude": ["node_modules", "build", "coverage", "dist"]

@@ -53,7 +53,7 @@
       "label": "Jest Tests",
       "fileSuffixType": "extend extension",
       "filesSuffix": "test",
-      "directoryName": "test",
+      "directoryName": "tests",
       "supportedExtension": ["ts", "tsx", "js", "jsx"],
       "defaultLocationForFiles": "project root",
       "description": "Jest Tests Creator"

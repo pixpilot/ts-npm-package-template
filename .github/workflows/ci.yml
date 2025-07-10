@@ -4,6 +4,11 @@
 name: CI
 
 on:
+  push:
+    branches:
+      - main
+      - master
+      - next
   pull_request:
     branches:
       - main

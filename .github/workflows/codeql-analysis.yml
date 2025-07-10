@@ -33,7 +33,8 @@ jobs:
 # Alternative: Reusable workflow for code scanning
 # -------------------------------------------------------------
 # Use this ONLY if your repo is private and you do NOT have GitHub Enterprise.
-# The official CodeQL workflow (see above) is always preferred for security and integration with GitHub Security UI.
+# The official CodeQL workflow (see above) is always preferred for security and
+# integration with GitHub Security UI.
 #
 # jobs:
 #   code-analysis:

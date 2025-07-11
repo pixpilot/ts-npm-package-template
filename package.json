@@ -24,7 +24,7 @@
     "lint": "eslint",
     "lint:fix": "eslint --fix",
     "lint:md": "markdownlint \"**/*.md\"",
-    "lint:md:fix": "markdownlint \"**/*.md\" --fix",
+    "lint:md:fix": "markdownlint CODE_OF_CONDUCT.md --fix",
     "format": "prettier --check .",
     "format:fix": "prettier --write .",
     "typecheck": "tsc --noEmit",
@@ -63,8 +63,10 @@
   "lint-staged": {
     "*.{ts,tsx,js,jsx,yml}": [
       "eslint --fix",
-      "prettier --write",
-      "markdownlint --fix"
+      "prettier --write"
+    ],
+    "*.md": [
+      "pnpm run lint:md:fix"
     ]
   }
 }

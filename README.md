@@ -28,14 +28,19 @@ pnpm install
 - Source code lives in the `src/` directory.
 - Tests are in the `tests/` directory.
 - To build the package:
+
   ```sh
   pnpm run build
   ```
+
 - To run tests:
+
   ```sh
   pnpm test
   ```
+
 - To check code formatting and linting:
+
   ```sh
   pnpm lint
   pnpm format

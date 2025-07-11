@@ -1,0 +1,3 @@
+{
+  "extends": "@pixpilot/dev-config/markdownlint"
+}

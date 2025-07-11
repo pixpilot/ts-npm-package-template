@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@pixpilot/dev-config':
-        specifier: ^1.4.1
-        version: 1.4.1(@babel/core@7.28.0)(@jest/transform@30.0.4)(@jest/types@30.0.1)(@typescript-eslint/eslint-plugin@8.36.0(@typescript-eslint/parser@8.36.0(eslint@9.30.1)(typescript@5.8.3))(eslint@9.30.1)(typescript@5.8.3))(@typescript-eslint/parser@8.36.0(eslint@9.30.1)(typescript@5.8.3))(babel-jest@30.0.4(@babel/core@7.28.0))(eslint@9.30.1)(jest-util@30.0.2)(jest@30.0.4(@types/node@24.0.10))(prettier@3.6.2)(typescript@5.8.3)
+        specifier: ^1.4.3
+        version: 1.4.3(@babel/core@7.28.0)(@jest/transform@30.0.4)(@jest/types@30.0.1)(@typescript-eslint/eslint-plugin@8.36.0(@typescript-eslint/parser@8.36.0(eslint@9.30.1)(typescript@5.8.3))(eslint@9.30.1)(typescript@5.8.3))(@typescript-eslint/parser@8.36.0(eslint@9.30.1)(typescript@5.8.3))(babel-jest@30.0.4(@babel/core@7.28.0))(eslint@9.30.1)(jest-util@30.0.2)(jest@30.0.4(@types/node@24.0.10))(prettier@3.6.2)(typescript@5.8.3)
       '@semantic-release/changelog':
         specifier: ^6.0.3
         version: 6.0.3(semantic-release@24.2.6(typescript@5.8.3))
@@ -497,8 +497,8 @@ packages:
   '@octokit/types@14.1.0':
     resolution: {integrity: sha512-1y6DgTy8Jomcpu33N+p5w58l6xyt55Ar2I91RPiIA0xCJBXyUAhXCcmZaDWSANiha7R9a6qJJ2CRomGPZ6f46g==}
 
-  '@pixpilot/dev-config@1.4.1':
-    resolution: {integrity: sha512-9Ho+XHgIV7sxTZYE8BWCFpEx15KOu7AjPUklVHf/KOFdHKc6Jn6mC7MWBMTLDFNz/lsv2XrZBwaH01NOI59FIQ==}
+  '@pixpilot/dev-config@1.4.3':
+    resolution: {integrity: sha512-wy0dB0M893LDSwIJAEjw/nbCggjDAAx4kuD3ir8cd3XI36HXWHvcUxy5jb5rH0C9j1mfkdVxR6HMfv1bh9yipw==}
     engines: {node: '>=20', pnpm: '>=9.6.0'}
     peerDependencies:
       eslint: ^9.0.0
@@ -3935,7 +3935,7 @@ snapshots:
     dependencies:
       '@octokit/openapi-types': 25.1.0
 
-  '@pixpilot/dev-config@1.4.1(@babel/core@7.28.0)(@jest/transform@30.0.4)(@jest/types@30.0.1)(@typescript-eslint/eslint-plugin@8.36.0(@typescript-eslint/parser@8.36.0(eslint@9.30.1)(typescript@5.8.3))(eslint@9.30.1)(typescript@5.8.3))(@typescript-eslint/parser@8.36.0(eslint@9.30.1)(typescript@5.8.3))(babel-jest@30.0.4(@babel/core@7.28.0))(eslint@9.30.1)(jest-util@30.0.2)(jest@30.0.4(@types/node@24.0.10))(prettier@3.6.2)(typescript@5.8.3)':
+  '@pixpilot/dev-config@1.4.3(@babel/core@7.28.0)(@jest/transform@30.0.4)(@jest/types@30.0.1)(@typescript-eslint/eslint-plugin@8.36.0(@typescript-eslint/parser@8.36.0(eslint@9.30.1)(typescript@5.8.3))(eslint@9.30.1)(typescript@5.8.3))(@typescript-eslint/parser@8.36.0(eslint@9.30.1)(typescript@5.8.3))(babel-jest@30.0.4(@babel/core@7.28.0))(eslint@9.30.1)(jest-util@30.0.2)(jest@30.0.4(@types/node@24.0.10))(prettier@3.6.2)(typescript@5.8.3)':
     dependencies:
       '@eslint/compat': 1.3.1(eslint@9.30.1)
       '@eslint/js': 9.30.1

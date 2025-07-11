@@ -23,8 +23,8 @@
     "clean": "rimraf dist",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
-    "lint:md": "markdownlint \"**/*.md\"",
-    "lint:md:fix": "markdownlint CODE_OF_CONDUCT.md --fix",
+    "lint:README": "markdownlint README.md",
+    "lint:README:fix": "markdownlint README.md --fix",
     "format": "prettier --check .",
     "format:fix": "prettier --write .",
     "typecheck": "tsc --noEmit",
@@ -37,8 +37,17 @@
     "test:watch": "jest --watch",
     "release": "semantic-release"
   },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx,yml}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "README.md": [
+      "pnpm run lint:README:fix"
+    ]
+  },
   "devDependencies": {
-    "@pixpilot/dev-config": "^1.4.1",
+    "@pixpilot/dev-config": "^1.4.3",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/commit-analyzer": "^13.0.1",
     "@semantic-release/git": "^10.0.1",
@@ -59,14 +68,5 @@
   "packageManager": "pnpm@10.12.2",
   "publishConfig": {
     "access": "public"
-  },
-  "lint-staged": {
-    "*.{ts,tsx,js,jsx,yml}": [
-      "eslint --fix",
-      "prettier --write"
-    ],
-    "*.md": [
-      "pnpm run lint:md:fix"
-    ]
   }
 }

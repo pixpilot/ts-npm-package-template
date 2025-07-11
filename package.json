@@ -23,8 +23,8 @@
     "clean": "rimraf dist",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
-    "lint:md": "markdownlint '**/*.md' -c .markdownlint.json",
-    "lint:md:fix": "markdownlint -c .markdownlint.js --fix",
+    "lint:md": "markdownlint",
+    "lint:md:fix": "markdownlint --fix",
     "format": "prettier --check .",
     "format:fix": "prettier --write .",
     "typecheck": "tsc --noEmit",
@@ -63,7 +63,8 @@
   "lint-staged": {
     "*.{ts,tsx,js,jsx,yml}": [
       "eslint --fix",
-      "prettier --write"
+      "prettier --write",
+      "markdownlint --fix"
     ]
   }
 }

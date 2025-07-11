@@ -46,3 +46,13 @@ pnpm install
   pnpm lint
   pnpm format
   ```
+
+## Note on Release Workflow
+
+The release workflow is disabled for this template by default. If you copy this repo, you may want to remove the conditional line in `.github/workflows/release.yml`:
+
+```
+if: ${{ !endsWith(github.repository, 'ts-npm-package-template') }}
+```
+
+But it works as-is: releases only run if your repo name does not end with `ts-npm-package-template`.

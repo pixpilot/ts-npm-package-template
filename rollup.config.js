@@ -1,6 +1,5 @@
 import typescript from '@rollup/plugin-typescript';
 import terser from '@rollup/plugin-terser';
-import path from 'path';
 
 // For all TypeScript files in 'src', excluding declaration files.
 // const entryPoints = globSync('src/**/*.ts', {

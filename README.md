@@ -20,7 +20,7 @@ This repository provides a starting point for TypeScript-based npm packages. It 
 
 Clone this repository and install dependencies using pnpm:
 
-```sh
+```bash
 pnpm install
 ```
 
@@ -30,19 +30,19 @@ pnpm install
 - Tests are in the `tests/` directory.
 - To build the package:
 
-  ```sh
+  ```bash
   pnpm run build
   ```
 
 - To run tests:
 
-  ```sh
+  ```bash
   pnpm test
   ```
 
 - To check code formatting and linting:
 
-  ```sh
+  ```bash
   pnpm lint
   pnpm format
   ```
@@ -56,3 +56,21 @@ if: ${{ !endsWith(github.repository, 'ts-npm-package-template') }}
 ```
 
 But it works as-is: releases only run if your repo name does not end with `ts-npm-package-template`.
+
+---
+
+This is a template for quickly creating a TypeScript npm package with modern tooling.
+
+## Quick Start
+
+To get started quickly, you can follow these steps:
+
+- [ ] Add your own code and tests to the `src` and `test` directories.
+- [ ] Update the `README.md` with usage instructions and examples.
+- [ ] Update the `package.json` with your package information.
+- [ ] Run `pnpm install` to install dependencies.
+- [ ] Run `pnpm test` to run tests.
+- [ ] Run `pnpm build` to build the package.
+- [ ] Run `pnpm lint` to lint the code.
+- [ ] Run `pnpm format` to format the code.
+- [ ] Run `pnpm release` to release a new version.

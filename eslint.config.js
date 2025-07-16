@@ -1,14 +1,7 @@
-import baseConfig from '@pixpilot/dev-config/eslint';
-import jestConfig from '@pixpilot/dev-config/eslint-jest';
-import prettierConfig from '@pixpilot/dev-config/eslint-prettier';
-import { includeIgnoreFile } from '@eslint/compat';
-import * as path from 'node:path';
+import path from 'node:path';
+import { createNodejsEslintConfig } from '@pixpilot/dev-config';
 
-const eslintConfig = [
-  includeIgnoreFile(path.join(import.meta.dirname, '.gitignore')),
-  ...baseConfig,
-  ...jestConfig,
-  ...prettierConfig,
-];
-
-export default eslintConfig;
+export default createNodejsEslintConfig([], {
+  // Best practice: ensure the path is relative to your eslint.config.js
+  ignoreFilePath: path.join(import.meta.dirname, '.gitignore'),
+});

@@ -54,7 +54,7 @@ jobs:
 # ======================================================================
 # steps:
 #   - name: Generate bot app token
-#     id: generate_token
+#     id: app_token
 #     uses: actions/create-github-app-token@v2
 #     with:
 #       app-id: ${{ secrets.RELEASER_ID }}
@@ -64,7 +64,7 @@ jobs:
 #     uses: actions/checkout@v4
 #     with:
 #       fetch-depth: 0
-#       token: ${{ steps.generate_token.outputs.token }}
+#       token: ${{ steps.app_token.outputs.token }}
 
 #   - name: Setup project
 #     uses: ./.github/actions/setup-project
@@ -75,5 +75,5 @@ jobs:
 #   - name: Release
 #     uses: pixpilot/changesets-autopilot@v1
 #     with:
-#       GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
+#       GITHUB_TOKEN: ${{ steps.app_token.outputs.token }}
 #       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

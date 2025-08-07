@@ -35,6 +35,7 @@ jobs:
         uses: ./.github/actions/setup-project
         with:
           registry-url: 'https://registry.npmjs.org'
+          build: 'false'
 
       - name: Release
         uses: pixpilot/changesets-autopilot@v1

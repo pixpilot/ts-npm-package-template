@@ -2,7 +2,8 @@
   "extends": "@pixpilot/dev-config/typescript",
   "compilerOptions": {
     "module": "ESNext",
-    "moduleResolution": "bundler"
+    "moduleResolution": "bundler",
+    "types": ["vitest/globals"]
   },
   "include": ["src", "tests", "scripts"],
   "exclude": ["node_modules", "build", "coverage", "dist"]

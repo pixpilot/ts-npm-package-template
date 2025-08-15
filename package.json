@@ -1,7 +1,7 @@
 {
   "name": "@pixpilot/ts-npm-package-template",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "packageManager": "pnpm@10.14.0",
   "description": "A reusable TypeScript npm package template for scalable library and module (slam) development, featuring modern tooling, best practices, and ready-to-use configuration.",
   "author": "",

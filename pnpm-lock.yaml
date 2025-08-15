@@ -18,11 +18,11 @@ importers:
         specifier: ^19.8.1
         version: 19.8.1
       '@pixpilot/dev-config':
-        specifier: ^3.0.0
-        version: 3.0.0(prettier@3.6.2)(typescript@5.9.2)
+        specifier: ^3.1.0
+        version: 3.1.0(prettier@3.6.2)(typescript@5.9.2)
       '@pixpilot/eslint-config':
-        specifier: ^2.6.0
-        version: 2.6.0(eslint@9.33.0(jiti@2.5.1))(typescript@5.9.2)(vitest@3.2.4)
+        specifier: ^2.6.1
+        version: 2.6.1(eslint@9.33.0(jiti@2.5.1))(typescript@5.9.2)(vitest@3.2.4)
       '@rollup/plugin-terser':
         specifier: ^0.4.4
         version: 0.4.4(rollup@4.46.2)
@@ -604,15 +604,15 @@ packages:
       vue-eslint-parser:
         optional: true
 
-  '@pixpilot/dev-config@3.0.0':
-    resolution: {integrity: sha512-Vr7TxPc96DU+yVQvADknPfyO7MJ5LeXzAWI7Z9b5j5DQlLBC8IFO8WIsU7Kjp3quKW8rQdZfx+8KZUX3HgBlHA==}
+  '@pixpilot/dev-config@3.1.0':
+    resolution: {integrity: sha512-J+fZHqITbOVrtgaJU8Yjdewk0ocKbGCKA40TtV/qyFBoddrATLBekT+r+KkS2Ln3RlLRaS6YkAIS1KgbWHwlCw==}
     engines: {node: '>=20', pnpm: '>=9.6.0'}
     peerDependencies:
       prettier: '>=3.6.0'
       typescript: '>=5.0.0'
 
-  '@pixpilot/eslint-config@2.6.0':
-    resolution: {integrity: sha512-nflPaS/ykiJjKoJAVzYYxwLnk+oPkz6Y4yuNatjhIzhBHibOUiEwl4a535GSAI0LPMyd89Pub30YjlwiHiS2lw==}
+  '@pixpilot/eslint-config@2.6.1':
+    resolution: {integrity: sha512-s52nihn/o4gdAMiKaqaW4snhREI7p+UwUmnN3y7QXooke10of9iIpbFRl8S7oosiHkRuIJ1EzOBXNK2GuUbcjA==}
     peerDependencies:
       eslint: ^9.10.0
       eslint-plugin-turbo: ^2.5.5
@@ -3338,7 +3338,7 @@ snapshots:
       - typescript
       - vitest
 
-  '@pixpilot/dev-config@3.0.0(prettier@3.6.2)(typescript@5.9.2)':
+  '@pixpilot/dev-config@3.1.0(prettier@3.6.2)(typescript@5.9.2)':
     dependencies:
       '@fastify/deepmerge': 3.1.0
       '@manypkg/get-packages': 3.1.0
@@ -3350,7 +3350,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@pixpilot/eslint-config@2.6.0(eslint@9.33.0(jiti@2.5.1))(typescript@5.9.2)(vitest@3.2.4)':
+  '@pixpilot/eslint-config@2.6.1(eslint@9.33.0(jiti@2.5.1))(typescript@5.9.2)(vitest@3.2.4)':
     dependencies:
       '@fastify/deepmerge': 3.1.0
       '@pixpilot/antfu-eslint-config': 3.0.3(eslint@9.33.0(jiti@2.5.1))(typescript@5.9.2)(vitest@3.2.4)

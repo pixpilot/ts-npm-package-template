@@ -37,7 +37,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:ui": "vitest --ui",
-    "deps:update:recursive": "npx taze -r",
+    "deps:update": "npx taze -r -w",
+    "deps:update:major": "npx taze major -r -w",
     "changeset": "changeset"
   },
   "lint-staged": {

@@ -50,7 +50,7 @@ jobs:
 #         uses: actions/checkout@v4
 
 #       - name: Initialize CodeQL
-#         uses: pixpilot/github/actions/codeql-issue-maker@main
+#         uses: pixpilot/github/actions/codeql-analysis-reporter@main
 #         with:
 #           token: ${{ secrets.GITHUB_TOKEN }}
 #           config-file: .github/codeql/codeql-config.yml

@@ -1,8 +1,4 @@
 {
-  "editor.formatOnSave": true,
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "github.copilot.chat.commitMessageGeneration.instructions": [
     {
       "file": ".github/copilot/commit-message-style.md"

@@ -57,6 +57,7 @@
     "@vitest/ui": "^3.2.4",
     "eslint": "^9.33.0",
     "husky": "^9.1.7",
+    "lint-staged": "^16.1.5",
     "markdownlint-cli": "^0.45.0",
     "prettier": "^3.6.2",
     "rimraf": "^6.0.1",
